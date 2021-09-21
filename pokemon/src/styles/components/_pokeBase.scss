@@ -1,0 +1,28 @@
+@use '../themes/defualtThemes' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+
+//Make responsive design by changing 
+//layout from 4 col to 3 then 2 then 1 using the @include
+
+.poke-base{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 0.5rem;
+    justify-items: center;
+    align-content: center;
+    
+    .pokemons{
+        display: block;
+        box-shadow: $dark-shadow;
+        text-align: center;
+        border: solid 2px black;
+        width: 350px;
+        img{
+            height: 150px;
+            width: 100%;
+            
+        }
+    }
+}
