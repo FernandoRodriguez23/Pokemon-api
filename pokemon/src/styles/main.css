@@ -277,21 +277,44 @@ ul {
   font-weight: 700;
 }
 
-.poke-base {
+.pokemon-dex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pokemon-dex .dex {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  gap: 0.5rem;
-  justify-items: center;
-  align-content: center;
+  grid-column: 1/2;
+  grid-column: 2/2;
 }
-.poke-base .pokemons {
-  display: block;
-  box-shadow: 0 5px 15px rbga(0, 0, 0, 0.3);
+.pokemon-dex .dex .dex-left .name {
+  font-size: 1.5rem;
+  color: #222;
+  background: #ddd;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
   text-align: center;
-  border: solid 2px black;
-  width: 350px;
 }
-.poke-base .pokemons img {
-  height: 150px;
-  width: 100%;
+.pokemon-dex .dex .dex-left .poke-img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+}
+.pokemon-dex .dex .dex-left .discription {
+  font-size: 1.5rem;
+  color: #222;
+  background: #ddd;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.pokemon-dex .dex .dex-left .discriptionPlus {
+  font-size: 1.5rem;
+  color: #222;
+  background: #ddd;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

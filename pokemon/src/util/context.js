@@ -36,18 +36,14 @@ export const PokemonProvider = ({children}) => {
         dispatch({type: 'HANDLE_PAGE', payload: value})
     }
 
-    
+    //another useEffect to search when it is clicked on or searched
 
     useEffect(() => {
-        fetchPokemon(`${API_ENDPOINT}`);
-    }, [])
-
-    useEffect(() => {
-        fetchPokemon(`${API_ENDPOINT}/${state.query}`)
+        fetchPokemon(`${API_ENDPOINT}/${state.query && state.query}`)
     }, [state.query]);
 
     return (
-        <PokemonContext.Provider value={{...state, handlePage, handleSearch}}>
+        <PokemonContext.Provider value={{...state, handlePage, handleSearch, fetchPokemon}}>
             {children}
         </PokemonContext.Provider>
     )
