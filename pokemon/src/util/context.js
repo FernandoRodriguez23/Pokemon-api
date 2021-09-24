@@ -24,6 +24,7 @@ export const PokemonProvider = ({children}) => {
         dispatch({type: 'HANDLE_PAGE', payload: value})
     }
 
+
     //another useEffect to search when it is clicked on or searched
 
  

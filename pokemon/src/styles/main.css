@@ -283,6 +283,8 @@ ul {
   background: #cf1717;
   width: 700px;
   text-align: center;
+  margin: 25px;
+  padding: 15px 0;
 }
 .pokemon-dex .dex {
   display: grid;
@@ -323,13 +325,16 @@ ul {
   border-radius: 0.25rem;
   text-align: center;
 }
+.pokemon-dex .dex .dex-left .btn-move {
+  margin-top: 20px;
+}
 .pokemon-dex .dex .dex-left .btn-move .prev {
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 20px solid #222;
-  margin: 30px;
+  margin-right: 30px;
 }
 .pokemon-dex .dex .dex-left .btn-move .next {
   width: 0;
@@ -345,4 +350,234 @@ ul {
   border: 1px solid #222;
   border-radius: 0.25rem;
   text-align: center;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.pokemon-dex .dex .dex-right .types .grass {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #78c851;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .fire {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #ef7f2e;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .water {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #668ff0;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .electric {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #f8d030;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .psychic {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #f85988;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .ice {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #97d8d8;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .dragon {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #733af8;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .dark {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #705848;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .fairy {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #ee9bad;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .normal {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #a7a776;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .fighting {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #be2f27;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .flying {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #a78ff0;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .poison {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #a040a0;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .ground {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #e0bf67;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .rock {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #b7a038;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .bug {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #a7b620;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .ghost {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #705798;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .types .steel {
+  color: #ddd;
+  font-size: 1.5rem;
+  background: #b9b9d0;
+  border: 1px solid #222;
+  border-radius: 0.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .stat-container {
+  width: 100%;
+}
+.pokemon-dex .dex .dex-right .stat-container .stats {
+  height: 50px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.pokemon-dex .dex .dex-right .stat-container .stats .stat-name {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+.pokemon-dex .dex .dex-right .stat-container .stat-wrap {
+  background: #fff;
+}
+.pokemon-dex .dex .dex-right .stat-container .stat-bar {
+  height: 10px;
+  background: linear-gradient(to right, #344a60, #0f4a85);
 }/*# sourceMappingURL=main.css.map */

@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 function PokeBase() {
   const { loading, data } = useFetch(`${window.location.pathname}`);
 
+  const handlePage = () => {
+    
+  }
+
   console.log(data);
 
   if (loading) {
@@ -70,20 +74,13 @@ function PokeBase() {
     abilities,
     sprites,
   } = data;
-//   const {front_default} = sprit
-console.log(sprites?.front_default);
 
-    //   setTimeout(() => {
-    //     console.log(sprites.front_default);
-    //   }, 0);
+  console.log(sprites?.front_default);
 
-    // const {front_default} = sprites;
+  
 
-    //Make a function to fix weigth and height to connon 
-
-    // const {type} = types;
-    console.log(types?.type?.name);
-    //figuer out how to get the name of the type
+  console.log(types);
+  
 
   return (
     <div className="pokemon-dex" key={id}>
@@ -92,10 +89,10 @@ console.log(sprites?.front_default);
           <h2 className="name">{name}</h2>
           <img src={sprites?.front_default} alt={name} className="poke-img" />
           <h4 className="discription">
-            {base}exp | {weight}kg
+            {base} exp | {Math.round(weight / 4.3)} lbs
           </h4>
           <h4 className="discriptionPlus">
-            #{order} | {height}m
+            #{order} | {Math.round(height * 3.9)}"
           </h4>
           <div className="btn-move">
             <button className="prev"></button>
@@ -104,9 +101,30 @@ console.log(sprites?.front_default);
         </div>
 
         <div className="dex-right">
-          <h2 className="title">Info</h2>
-          <div className="types">
-                
+          <h2 className="title">Type</h2>
+          <ul className="types">
+            {types?.map((each) => {
+                  const {type} = each;
+                  const {name, slot} = type
+                  return (
+                    <li className={name} key={slot} style={{textTransform: "capitalize"}}>  {name}  </li>
+                  )
+                })}
+          </ul>
+          <div className="stat-container">
+            <h2 className="title">Stats</h2>
+            {stats?.map((each) => {
+              const {base_stat, stat} = each;
+              const {name} = stat;
+              return (
+                <div className="stats">
+                  <h4 className="stat-name">{name}</h4>
+                  <div className="stat-wrap">
+                  <div className="stat-bar" style={{width: `${base_stat}%`}}></div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -13,6 +13,8 @@
   background: $red-dark;
   width: 700px;
   text-align: center;
+  margin: 25px;
+  padding: 15px 0;
 
   .dex {
     display: grid;
@@ -54,14 +56,15 @@
         text-align: center;
       }
       .btn-move {
+        margin-top: 20px;
         .prev {
+          
           width: 0;
           height: 0;
           border-top: 20px solid transparent;
           border-bottom: 20px solid transparent;
-
           border-right: 20px solid $black;
-          margin: 30px;
+          margin-right: 30px;
         }
         .next {
           width: 0;
@@ -80,7 +83,241 @@
         border: 1px solid $black;
         border-radius: $radius;
         text-align: center;
+        width: 100%;
       }
+      .types{
+        display: flex;
+        gap: .5rem;
+        width: 100%;
+        margin-bottom: 15px;
+        
+        .grass{
+          color: $white;
+          font-size: 1.5rem;
+          background: $grass;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .fire{
+          color: $white;
+          font-size: 1.5rem;
+          background: $fire;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .water{
+          color: $white;
+          font-size: 1.5rem;
+          background: $water;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .electric{
+          color: $white;
+          font-size: 1.5rem;
+          background: $electric;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .psychic{
+          color: $white;
+          font-size: 1.5rem;
+          background: $psychic;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .ice{
+          color: $white;
+          font-size: 1.5rem;
+          background: $ice;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .dragon{
+          color: $white;
+          font-size: 1.5rem;
+          background: $dragon;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .dark{
+          color: $white;
+          font-size: 1.5rem;
+          background: $dark;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .fairy{
+          color: $white;
+          font-size: 1.5rem;
+          background: $fairy;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .normal{
+          color: $white;
+          font-size: 1.5rem;
+          background: $normal;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .fighting{
+          color: $white;
+          font-size: 1.5rem;
+          background: $fighting;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .flying{
+          color: $white;
+          font-size: 1.5rem;
+          background: $flying;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .poison{
+          color: $white;
+          font-size: 1.5rem;
+          background: $poison;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .ground{
+          color: $white;
+          font-size: 1.5rem;
+          background: $ground;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .rock{
+          color: $white;
+          font-size: 1.5rem;
+          background: $rock;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .bug{
+          color: $white;
+          font-size: 1.5rem;
+          background: $bug;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .ghost{
+          color: $white;
+          font-size: 1.5rem;
+          background: $ghost;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+        .steel{
+          color: $white;
+          font-size: 1.5rem;
+          background: $steel;
+          border: 1px solid $black;
+          border-radius: $radius;
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          width: 100%;
+        }
+
+
+      }
+      .stat-container{
+        width: 100%;
+        .stats{
+            height: 50px;
+            display: block;
+            background: none;
+            border-radius: 0;
+            .stat-name{
+              padding: 0;
+              margin: 0;
+              text-transform: uppercase;
+              display: inline-block;
+              font-weight: 500;
+              font-size: 1.2rem;
+              color: $white;
+          }
+        }
+        .stat-wrap{
+            background: #fff;
+            
+        }
+        .stat-bar{
+            height: 10px;
+            background: linear-gradient(to right, $primary-1, $secondary-1);
+        }
+    }
     }
   }
 }
