@@ -1,19 +1,21 @@
 import React, {useReducer, useContext, useEffect, useState} from 'react';
 import { reducer } from "./reducer";
+import useFetch from './useFetch';
 
 
 const initialState = {
     loading: true,
     results: [],
     next: '',
-    prev: '',
-    query: 'charizard'
+    prev: ''
 }
 
 const PokemonContext = React.createContext();
 
 export const PokemonProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
+    const [search, setSearch] = useState("")
+    useFetch(`/${search}`)
 
     
     const handleSearch = (query) => {
@@ -30,7 +32,7 @@ export const PokemonProvider = ({children}) => {
  
 
     return (
-        <PokemonContext.Provider value={{...state, handlePage, handleSearch}}>
+        <PokemonContext.Provider value={{...state, handlePage, handleSearch, search, setSearch}}>
             {children}
         </PokemonContext.Provider>
     )

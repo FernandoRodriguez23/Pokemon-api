@@ -1,15 +1,11 @@
 import React from "react";
 import { usePokemonContext } from "../util/context";
-import placeholder from "../util/placeholder.png";
 import useFetch from "../util/useFetch";
 import { Link } from "react-router-dom";
 
 function PokeBase() {
   const { loading, data } = useFetch(`${window.location.pathname}`);
 
-  const handlePage = () => {
-    
-  }
 
   console.log(data);
 
@@ -76,8 +72,8 @@ function PokeBase() {
   } = data;
 
   console.log(sprites?.front_default);
+  console.log(id);
 
-  
 
   console.log(types);
   
@@ -95,8 +91,8 @@ function PokeBase() {
             #{order} | {Math.round(height * 3.9)}"
           </h4>
           <div className="btn-move">
-            <button className="prev"></button>
-            <button className="next"></button>
+            <button className="prev">{id -1}</button>
+            <button className="next">{id +1}</button>
           </div>
         </div>
 
@@ -128,7 +124,7 @@ function PokeBase() {
           </div>
         </div>
       </div>
-      <Link to="/">Back to List</Link>
+      <Link to="/" className='back'>Back to List</Link>
     </div>
   );
 }

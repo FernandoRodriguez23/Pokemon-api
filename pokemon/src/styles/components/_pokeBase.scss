@@ -32,6 +32,8 @@
         border: 1px solid $black;
         border-radius: $radius;
         text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       .poke-img {
         width: 200px;
@@ -46,6 +48,8 @@
         border: 1px solid $black;
         border-radius: $radius;
         text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       .discriptionPlus {
         font-size: 1.5rem;
@@ -54,6 +58,8 @@
         border: 1px solid $black;
         border-radius: $radius;
         text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       .btn-move {
         margin-top: 20px;
@@ -84,6 +90,8 @@
         border-radius: $radius;
         text-align: center;
         width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       .types{
         display: flex;
@@ -319,6 +327,16 @@
         }
     }
     }
+  }
+
+  .back{
+    color: $black;
+    background: $white;
+    border: 1px solid $black;
+    border-radius: $radius;
+    width: 200px;
+    padding: 5px 10px;
+    font-weight: 600;
   }
 }
 
